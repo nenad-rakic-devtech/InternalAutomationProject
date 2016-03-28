@@ -20,6 +20,8 @@ namespace TestFrameWorkDevtech
             DriverFireFox = new FirefoxDriver();
             WaitFireFox = new WebDriverWait(DriverFireFox, TimeSpan.FromSeconds(30));
             SetWebPage(DriverFireFox);
+            HwndHomePage = DriverFireFox.CurrentWindowHandle;
+            
 
             // Chrome
             //DriverChrome = new ChromeDriver(@"C:\SeleniumBrowserServers");

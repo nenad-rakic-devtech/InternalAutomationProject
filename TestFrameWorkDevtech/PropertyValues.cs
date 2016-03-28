@@ -11,6 +11,8 @@
         public static string ContactPageTitle = "DEVTECH | The Cloud Experts - Contact us";
 
         public static string CareersPageTitle = "DEVTECH | The Cloud Experts - Careers";
-#endregion
+
+        public static string LinkedinPageTitle = "DEVTECH&#58; Overview | LinkedIn";
+        #endregion
     }
 }

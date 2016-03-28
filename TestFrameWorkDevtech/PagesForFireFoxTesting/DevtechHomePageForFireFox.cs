@@ -11,6 +11,7 @@ namespace TestFrameWorkDevtech.PagesForFireFoxTesting
         {
             PageFactory.InitElements(DriverFireFox, this);
         }
+       
         #region Page Factoring
         //Email
         [FindsBy(How = How.CssSelector, Using = "#navbar > div > div > a.logo.pull-left > img.hidden-phone")]
@@ -23,8 +24,12 @@ namespace TestFrameWorkDevtech.PagesForFireFoxTesting
         //Careers page Link
         [FindsBy(How = How.CssSelector, Using = "#navbar > div > div > div > nav > ul > li:nth-child(4) > a")]
         public IWebElement Career { get; set; }
+
+        // Linkedin page element
+        [FindsBy(How = How.Id, Using = "copyShin")]
+        public IWebElement Linkedin { get; set; }
         #endregion
-        
+
         // Check Title on HomePage on FireFox
         public bool IsAtHomePageOnFireFox()
         {
@@ -56,7 +61,7 @@ namespace TestFrameWorkDevtech.PagesForFireFoxTesting
         }
         #endregion
 
-        // All links from home page
+        // All visiable links from the top frame of the home page
         public static List<string> CanGetAllLinksFromTopBar()
         {
             IWebElement a = DriverFireFox.FindElement(By.Id("navbar"));
@@ -81,8 +86,28 @@ namespace TestFrameWorkDevtech.PagesForFireFoxTesting
             return value;
         }
 
+        #region Social networks elements
+
+        public void SwitchToHomePage()
+        {
+            DriverFireFox.SwitchTo().Window(HwndHomePage);
+        }
+        // Linkedin
+            public void CanNavigateToLinkedinPage()
+            {
+                var linkedin = WaitFireFox.Until(ExpectedConditions.ElementToBeClickable(Linkedin));
+                linkedin.Click();   
+            }
+            public bool IsAtDevtechLinkedinPageOnFireFox()
+            {
+                return BaseClass.TitleOnFireFox == PropertyValues.LinkedinPageTitle;
+            }
+
+        #endregion
+
 
 
 
     }
+
 }

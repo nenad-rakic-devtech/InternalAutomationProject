@@ -17,7 +17,7 @@ namespace TestFrameWorkDevtech
         public static IWebDriver Driver, DriverChrome;
         public static WebDriverWait Wait, WaitFireFox, WaitChrome;
         public static FirefoxDriver DriverFireFox;
-        public static string Hwnd;
+        public static string HwndHomePage;
 
     }
 }
