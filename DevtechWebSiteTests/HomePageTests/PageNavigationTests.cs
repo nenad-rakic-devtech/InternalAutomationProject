@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestFrameWorkDevtech;
-using TestFrameWorkDevtech.PagesForFireFoxTesting;
+using TestFrameWorkDevtech.Page_classes;
 
 namespace DevtechWebSiteTests.HomePageTests
 {
@@ -11,9 +11,9 @@ namespace DevtechWebSiteTests.HomePageTests
         [TestMethod]
         public void CanGoOnDevtechHomePage()
         {
-            DevtechHomePageForFireFox onDevtechHomePageForFireFox = new DevtechHomePageForFireFox();
+            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
 
-            Assert.IsTrue(onDevtechHomePageForFireFox.IsAtHomePageOnFireFox());
+            Assert.IsTrue(onDevtechHomePage.IsAtHomePage());
             Debug.Write("HomePAge on FireFox");                   
 
         }
@@ -21,22 +21,22 @@ namespace DevtechWebSiteTests.HomePageTests
         [TestMethod]
         public void CanGoOnContactPage()
         {
-            DevtechHomePageForFireFox onDevtechHomePageForFireFox = new DevtechHomePageForFireFox();
+            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
             // Navigate to Contact page
-            ContactPageForFireFox onContactPageForFireFox = onDevtechHomePageForFireFox.CanGoToContactPage();
+            ContactPage onContactPage = onDevtechHomePage.CanGoToContactPage();
 
-            Assert.IsTrue(onContactPageForFireFox.IsAtContactPageOnFireFox());
+            Assert.IsTrue(onContactPage.IsAtContactPageOnFireFox());
             Debug.Write("Contact Page on FireFox");
         }
 
         [TestMethod]
         public void CanGoOnCareersPage()
         {
-            DevtechHomePageForFireFox onDevtechHomePageForFireFox = new DevtechHomePageForFireFox();
+            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
             // Navigate to Contact page
-            CareesPageForFireFox onCareesPageForFireFox = onDevtechHomePageForFireFox.CanGoToCareerstPage();
+            CareesPage onCareesPage = onDevtechHomePage.CanGoToCareerstPage();
 
-            Assert.IsTrue(onCareesPageForFireFox.IsAtCareersPageOnFireFox());
+            Assert.IsTrue(onCareesPage.IsAtCareersPage());
             Debug.Write("Careers Page on FireFox");
         }
 

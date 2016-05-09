@@ -1,51 +1,50 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
 namespace TestFrameWorkDevtech
 {
     public class BaseClass : PropertyCollection
-    {
+    {       
         public void SetWebPage(IWebDriver driver)
-        {
-            driver.Manage().Window.Maximize();
+        {           
             driver.Navigate().GoToUrl(PropertyValues.LoginUrl);
+            driver.Manage().Window.Maximize();
         }
-
         public void StartWebBrowsers()
         {
-            // FireFox
-            DriverFireFox = new FirefoxDriver();
-            WaitFireFox = new WebDriverWait(DriverFireFox, TimeSpan.FromSeconds(30));
-            SetWebPage(DriverFireFox);
-            HwndHomePage = DriverFireFox.CurrentWindowHandle;
-            
-
             // Chrome
-            //DriverChrome = new ChromeDriver(@"C:\SeleniumBrowserServers");
-            //WaitChrome = new WebDriverWait(DriverChrome, TimeSpan.FromSeconds(30));
-            //SetWebPage(DriverChrome);
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.AddArguments("chrome.switches", "--disable-extensions");
+            chromeOptions.AddArgument("test-type");
+            chromeOptions.AddArgument("start-maximized");
+            chromeOptions.LeaveBrowserRunning = true;
+            //Driver = new ChromeDriver(@"C:\SeleniumBrowserServers", chromeOptions);
+
+            // FireFox
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            Driver = new FirefoxDriver();
+
+            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(30));
+            SetWebPage(Driver);                   
         }
 
-        //Check for Title on HomePage on FireFox
-        public static string TitleOnFireFox => DriverFireFox.Title;
-        //Check for Title on HomePage on Chrome
-        public static string TitleOnChrome => DriverChrome.Title;
+        //Check for Title on HomePage
+        public static string Title => Driver.Title;
 
         [TestCleanup]
         public void QuitOption()
         {
-            //Driver.Quit();
-            //DriverFireFox.Quit();
-            //DriverChrome.Quit();
+            Driver.Quit();
         }
 
         [TestInitialize]
         public void RunBrowsers()
         {
-            StartWebBrowsers();
+            StartWebBrowsers();            
         }
     }
 }
