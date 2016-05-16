@@ -13,3 +13,17 @@ C:\Users\nenad.rakic\documents\visual studio 2015\Projects\TestFrameWorkDevtech\
 C:\Users\nenad.rakic\Documents\Visual Studio 2015\Projects\TestFrameWorkDevtech\TestFrameWorkDevtech\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\nenad.rakic\Documents\Visual Studio 2015\Projects\TestFrameWorkDevtech\TestFrameWorkDevtech\bin\Debug\IEDriverServer64.exe
 C:\Users\nenad.rakic\documents\visual studio 2015\Projects\TestFrameWorkDevtech\TestFrameWorkDevtech\bin\Debug\Fenton.Selenium.SuperDriver.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\IEDriverServer64.exe
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\MicrosoftWebDriver.exe
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\chromedriver.exe
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\TestFrameWorkDevtech.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\TestFrameWorkDevtech.pdb
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\Fenton.Selenium.SuperDriver.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\SeleniumWebdriverHelpers.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\WebDriver.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\WebDriver.Support.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\WebDriver.xml
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\bin\Debug\WebDriver.Support.xml
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\obj\Debug\TestFrameWorkDevtech.dll
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\obj\Debug\TestFrameWorkDevtech.pdb
+D:\Rakic Automation\InternalAutomationProject\TestFrameWorkDevtech\obj\Debug\TestFrameWorkDevtech.csprojResolveAssemblyReference.cache

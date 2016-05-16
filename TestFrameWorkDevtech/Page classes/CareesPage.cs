@@ -4,7 +4,7 @@ namespace TestFrameWorkDevtech.Page_classes
     {
         public bool IsAtCareersPage()
         {
-            return BaseClass.Title == PropertyValues.CareersPageTitle;
+            return BaseClass.Driver.Title == PropertyValues.CareersPageTitle;
         }
     }
 }

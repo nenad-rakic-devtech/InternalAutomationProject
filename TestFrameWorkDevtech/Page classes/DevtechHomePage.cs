@@ -28,7 +28,7 @@ namespace TestFrameWorkDevtech.Page_classes
         // Check Title on HomePage
         public bool IsAtHomePage()
         {
-            return BaseClass.Title == PropertyValues.DevtechPageTitle;
+            return BaseClass.Driver.Title == PropertyValues.DevtechPageTitle;
         }
 
         #region Page navigation

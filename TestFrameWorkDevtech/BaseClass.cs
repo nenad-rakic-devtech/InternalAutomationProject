@@ -1,9 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace TestFrameWorkDevtech
 {
@@ -33,7 +33,8 @@ namespace TestFrameWorkDevtech
         }
 
         //Check for Title on HomePage
-        public static string Title => Driver.Title;
+        //public static string Title => Driver.Title;
+
 
         [TestCleanup]
         public void QuitOption()

@@ -4,7 +4,7 @@ namespace TestFrameWorkDevtech.Page_classes
     {
         public bool IsAtContactPageOnFireFox()
         {
-            return BaseClass.Title == PropertyValues.ContactPageTitle;
+            return BaseClass.Driver.Title == PropertyValues.ContactPageTitle;
         }
     }
 }
