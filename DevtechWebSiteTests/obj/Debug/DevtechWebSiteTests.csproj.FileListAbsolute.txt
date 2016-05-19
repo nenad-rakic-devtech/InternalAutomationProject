@@ -12,3 +12,17 @@ C:\Users\nenad.rakic\documents\visual studio 2015\Projects\TestFrameWorkDevtech\
 C:\Users\nenad.rakic\documents\visual studio 2015\Projects\TestFrameWorkDevtech\DevtechWebSiteTests\bin\Debug\WebDriver.Support.dll
 C:\Users\nenad.rakic\documents\visual studio 2015\Projects\TestFrameWorkDevtech\DevtechWebSiteTests\bin\Debug\WebDriver.Support.xml
 C:\Users\nenad.rakic\Documents\Visual Studio 2015\Projects\TestFrameWorkDevtech\DevtechWebSiteTests\bin\Debug\IEDriverServer64.exe
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\obj\Debug\DevtechWebSiteTests.csprojResolveAssemblyReference.cache
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\obj\Debug\DevtechWebSiteTests.dll
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\obj\Debug\DevtechWebSiteTests.pdb
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\IEDriverServer64.exe
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\MicrosoftWebDriver.exe
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\chromedriver.exe
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\DevtechWebSiteTests.dll
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\DevtechWebSiteTests.pdb
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\TestFrameWorkDevtech.dll
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\WebDriver.dll
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\WebDriver.Support.dll
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\TestFrameWorkDevtech.pdb
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\WebDriver.xml
+F:\InternalProject\InternalAutomationProject\DevtechWebSiteTests\bin\Debug\WebDriver.Support.xml

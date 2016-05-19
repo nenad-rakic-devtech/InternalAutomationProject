@@ -4,11 +4,19 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using TestFrameWorkDevtech.Page_classes;
 
 namespace TestFrameWorkDevtech
 {
     public class BaseClass : PropertyCollection
-    {       
+    {
+        protected DevtechHomePage OnDevtechHomePage { get; set; }
+
+        [TestInitialize]
+        public void ReferencesOfThePages()
+        {
+            OnDevtechHomePage = new DevtechHomePage();
+        }
         public void SetWebPage(IWebDriver driver)
         {           
             driver.Navigate().GoToUrl(PropertyValues.LoginUrl);

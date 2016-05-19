@@ -8,22 +8,19 @@ namespace DevtechWebSiteTests.HomePageTests
     [TestClass]
     public class PageNavigationTests : BaseClass
     {
+       
         [TestMethod]
         public void CanGoOnDevtechHomePage()
         {
-            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
-
-            Assert.IsTrue(onDevtechHomePage.IsAtHomePage());
+            Assert.IsTrue(OnDevtechHomePage.IsAtHomePage());
             Debug.Write("HomePAge on FireFox");                   
-
         }
 
         [TestMethod]
         public void CanGoOnContactPage()
         {
-            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
             // Navigate to Contact page
-            ContactPage onContactPage = onDevtechHomePage.CanGoToContactPage();
+            ContactPage onContactPage = OnDevtechHomePage.CanGoToContactPage();
 
             Assert.IsTrue(onContactPage.IsAtContactPageOnFireFox());
             Debug.Write("Contact Page on FireFox");
@@ -32,9 +29,8 @@ namespace DevtechWebSiteTests.HomePageTests
         [TestMethod]
         public void CanGoOnCareersPage()
         {
-            DevtechHomePage onDevtechHomePage = new DevtechHomePage();
             // Navigate to Contact page
-            CareesPage onCareesPage = onDevtechHomePage.CanGoToCareerstPage();
+            CareesPage onCareesPage = OnDevtechHomePage.CanGoToCareerstPage();
 
             Assert.IsTrue(onCareesPage.IsAtCareersPage());
             Debug.Write("Careers Page on FireFox");
