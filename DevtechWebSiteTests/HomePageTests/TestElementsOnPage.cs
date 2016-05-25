@@ -13,5 +13,6 @@ namespace DevtechWebSiteTests.HomePageTests
         {
             CollectionAssert.AreEqual(DevtechHomePage.CanGetAllLinksFromTopBar(), DevtechHomePage.AllLinksFromTopBar());
         }
+
     }
 }

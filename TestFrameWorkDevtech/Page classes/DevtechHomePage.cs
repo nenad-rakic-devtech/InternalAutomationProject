@@ -80,5 +80,54 @@ namespace TestFrameWorkDevtech.Page_classes
             value.Add("CONTACT");
             return value;
         }
+
+
+        public bool FooterNavigationBar()
+        {
+            IWebElement region = Driver.FindElement(By.ClassName("region-footer"));
+            Dictionary<IWebElement, List<IWebElement>> first = new Dictionary<IWebElement, List<IWebElement>>();
+            List<IWebElement> headers = new List<IWebElement>(region.FindElements(By.ClassName("block-title")));
+            List<IWebElement> options = new List<IWebElement>(region.FindElements(By.ClassName("menu")));
+
+            for (int j = 0; j < options.Count; j++ )
+            {
+                first.Add(headers[j], new List<IWebElement> { options[j] });
+            }
+
+            //comparison of headings
+            var second = PropertyValues.FooterNavigationBar;
+
+            foreach (var pair1 in first)
+            {
+                var key1 = pair1.Key.Text;
+
+                if (second.ContainsKey(key1))
+                {
+                    System.Console.WriteLine("true");
+                }
+                else return false;
+            }
+
+            //comparison of links
+            foreach (var pair1 in first)
+            {
+                List<IWebElement> sht1;
+                first.TryGetValue(pair1.Key, out sht1);
+                var newSht = sht1[0].Text.Replace("\r\n",",").Split(',');
+
+                List<string> sht2;
+                second.TryGetValue(pair1.Key.Text, out sht2);
+                sht2.ToArray();
+
+                for (int i = 0; i < newSht.Length; i++)
+                {
+                    if (newSht[i] == sht2[i])
+                        System.Console.WriteLine("true");
+                    else
+                        return false;
+                }
+            }
+            return true;
+        }
     }
 }

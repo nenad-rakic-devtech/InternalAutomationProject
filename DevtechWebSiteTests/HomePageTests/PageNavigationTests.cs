@@ -40,5 +40,15 @@ namespace DevtechWebSiteTests.HomePageTests
             Debug.Write("Careers Page on FireFox");
         }
 
+
+
+        [TestMethod]
+        public void FooterLinksCheckup()
+        {
+            DevtechHomePage navigationBar =  new DevtechHomePage();
+            var result  = navigationBar.FooterNavigationBar();
+            Assert.IsTrue(result);
+        }
+
     }
 }
